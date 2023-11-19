@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PDF Processor</title>
+</head>
+
+<body>
+    <h1>Upload a PDF</h1>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <label for="company">Company:</label><br>
+        <input type="text" id="company" name="company"><br>
+        <label for="role">Role:</label><br>
+        <input type="text" id="role" name="role"><br>
+        <label for="pdf_file">Resume:</label><br>
+        <input type="file" name="pdf_file">
+        <input type="submit" value="Upload">
+    </form>
+    <h2>Optimized Resume:</h2>
+    <div id="optimized_resume">{{ optimized_resume|safe }}</div>
+</body>
+
+</html>
